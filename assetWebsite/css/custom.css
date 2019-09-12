@@ -1,0 +1,314 @@
+body{
+    margin-left: 28px;
+}
+.topbar
+{
+    left: 0;
+}
+.w-30
+{
+    width: 30px;
+}
+.white-bg
+{
+    background: #FFFl
+}
+
+.widget-img>img
+{
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   /* margin: 10px auto; */
+   position: relative;
+   left: 50%;
+   margin-left: -50px;
+   border-radius: 50%;
+   border: 4px solid#eaeaea;
+   margin-bottom: 36px;
+}
+.widget-user-info .user-name >h3
+{
+   text-align: center;
+   font-size: 22px;
+   padding: 0 35px;
+}
+.widget-user-info .username p
+{
+	text-align: center;
+    font-size: 12px;
+}
+.widget-columns
+{
+	display: flex;
+    justify-content: space-around;
+}
+.widget-columns .box
+{
+   padding: 8px 15px 0;
+
+   margin: 12px 0;
+   border-radius: 5px;
+   transition:  all 0.5s ease-in-out;
+}
+.widget-columns .box:hover
+{
+	background: #eaeaea;
+}
+.widget-columns .box .img-box img
+{
+	width:25px;
+}
+.widget-columns .box .num-box span
+{
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.we-comet li>li {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.comet-avatar
+{
+    width: 5.6%;
+}
+.we-video-info > ul {
+
+    display: inline-flex;
+}
+.we-video-info > ul li {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 20px;
+}
+.post-meta {
+    border: 1px solid#eaeaea;
+    float: left;
+    margin-top: 15px;
+    padding: 0 px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.we-video-info{
+    padding: 0;
+}
+.post_owner
+{
+    font-size:12px;
+}
+
+#with
+{
+    color: #777;
+    font-size: 16px;
+}
+.container>.holder
+{
+    width: 218px;
+    height: 310px;
+    padding: 3px 1px;
+    position: absolute;
+    background: #eaeaea;
+    border-radius: 5px;
+    z-index: 55;
+    background: white;
+    overflow-y: auto;
+    right: 11px;
+    top: 100px;
+
+}
+.container>.holder>a
+{
+    width: 100%;
+    margin-bottom:0;
+}
+.container>.holder>a>.box
+{
+ overflow: hidden;
+ height: 50px;
+ width: 100%;
+ padding: 7px;
+ border-radius: 2px;
+ /* margin: 3px 8px; */
+ cursor: pointer;
+}
+.container>.holder>a>.box:hover
+{
+    background: #eaeaeaea;
+}
+.container>.holder>a>.box>img
+
+{
+    width: 35px;
+    border-radius: 50%;
+}
+.container>.holder>a>.box>p
+{
+    display: inline-block;
+}
+.ti-close
+{padding: 5px;
+    /* position: absolute; */
+    /* right: 11px; */
+    /* top: 10px; */
+    background: #eaeaea;
+    border-radius: 7px;
+    float: right;
+    margin: 7px 15px 0 0;
+}
+.ds-none
+{
+    display: none !important;
+}
+
+.countFriends
+{
+    cursor: pointer;
+}
+
+.mutual-name
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 13px;
+}
+.sidebar .widget-title.mutual
+{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #424242;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 11px;
+    padding: 3px 17px 10px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.write-post
+{
+
+    max-width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: none;
+}
+
+.chat-box.show
+{
+    position: fixed;
+    right: 77px;
+    bottom: 0;
+}
+
+.coverege
+{
+  float: left;
+  position: relative;
+  width: 93%;
+  margin: 0 72px;
+}
+.feature-photo > figure
+{
+    height: 400px;
+}
+.timeline-info .admin-name > h5 {
+    color: #088dcd;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+    vertical-align: super
+}
+.friends
+{
+    background: #eaeaea;
+    padding: 12px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.friends.active
+{
+    color: #2980b9;
+    background: #ccdce6;
+}
+
+.option
+{
+    background: #fdfdfdea;
+    font-size: 13px;
+    width: 120px;
+    height: 84px;
+
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid#EAEAEA;
+    font-weight: 500;
+    position: absolute;
+    z-index: 555;
+    box-shadow: 2px 2px 2px #Eaeaea, -2px -2px 2px #eaeaea;
+    font-weight: 600;
+}
+.option>ul>li
+{
+    border-bottom: 1px solid#FFF;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 0 10px;
+
+}
+.option>ul>li:hover
+{
+    border-bottom: 1px solid#FFF;
+    line-height: 30px;
+    background: #eaeaea;
+    cursor: pointer;
+
+}
+.slider-ul-holder{
+    padding: 14px;
+    font-size: 15px;
+}
+.slider-ul-holder>a>li
+{
+    margin-top: 10px;
+}
+.slider-ul-holder>a>li>span
+{
+    display: inline;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+
+
+#people-list figure {
+    width: auto;
+
+}
+.main .chat .content {
+    height: 600px !important;
+}
+.unblockmsg
+{
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -36px;
+    right: 9px;
+    background: #2b5992;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.friendz-meta
+{
+    width: auto
+}
