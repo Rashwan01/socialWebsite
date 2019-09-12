@@ -1,0 +1,62 @@
+  <script>
+                var username = "<?php  echo $data['username']  ?>";
+
+                $(document).ready(function(){
+                  /* ajax request */
+                  $.ajax({
+                    url:"ajaxLoadPost.php",
+                    type:"POST",
+                    dataType:"html",
+                    data:"page=1&user="+username,
+                    cache:false,
+                    success:function (data)
+                    {
+                      $(".btn-load-more").hide();
+                      $(".loadMore").append(data)
+
+                    },
+
+                  });
+                  /* ajax  Request end */
+                  $(window).scroll(function(){
+                    var height = $(".loadMore").height();
+                    var scrollTop = $(this).scrollTop();
+                    var page = $('.loadMore').find('.nextPage').val();
+                    var noMorePosts = $('.loadMore').find('.noMorePosts').val();
+                    console.log(" height of posts"+height);
+                    console.log( "scroll top  page" +scrollTop);
+                    console.log("body scroll height " +document.body.scrollHeight);
+                    console.log( "body scrolltop + window height" +(document.body.scrollTop+window.innerHeight))  ;
+
+                    if((document.body.scrollHeight == document.body.scrollTop + window.innerHeight +scrollTop) && noMorePosts == 'false')
+                    {
+
+                     $(".btn-load-more").fadeIn(500);
+
+                     $.ajax({
+                      url:"ajaxLoadPost.php",
+                      type:"POST",
+                      dataType:"html",
+                      data:"page="+page+"&user="+username,
+                      success:function (data)
+                      {
+                       $(".btn-load-more").hide();
+                       $(".loadMore").append(data)
+
+                     },
+
+                   });
+                   }
+                   else
+                   {
+                     $(".btn-load-more").fadeOut(500);
+
+                   }
+                   return false;
+
+                 });
+
+                });
+
+
+              </script>
